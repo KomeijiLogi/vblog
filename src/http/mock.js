@@ -17,7 +17,9 @@ var index=Mock.mock('http://api.com/index',{
             'content':'@csentence()',
             'imgPath':Random.image('100*100','#894FC4','#FFF','png','hello')
          }
-       ]
+       ],
+       'banner':Random.image('400x100', '#ffcc33', '#FFF', 'png', 'image')
+
    },
    //模拟主体第二部分,存放包括标题，以及3张图 主要的两部分
    'section2':{
@@ -29,7 +31,8 @@ var index=Mock.mock('http://api.com/index',{
              'imgPath2':Random.image('100*100','#2C6BCC','#FFF','png','hello'),
              'imgPath3':Random.image('100*100','#B33D5A','#FFF','png','hello')
           }
-        ]
+        ],
+        'banner':Random.image('400x100', '#b97cc9', '#FFF', 'png', 'image')
    }
 
 });
@@ -42,7 +45,7 @@ var detail=Mock.mock('http://api.com/detail',{
 
 });
 
-export default  {
+export   {
    index,
    category,
    detail

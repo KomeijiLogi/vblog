@@ -1,13 +1,28 @@
-<template>
-
+<template lang="html">
+   <mt-swipe :auto="4000">
+       <mt-swipe-item v-for="k in swiperData">
+           <router-link :to="{name:'详情页'}">
+              <img v-lazy="k.imgPath"  alt=""/>
+           </router-link>
+       </mt-swipe-item>
+   </mt-swipe>
 </template>
 
 <script>
     export default {
-        name: "swiper"
+        // name: "swiper"
+         props:['swiperData']
     }
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+  .mint-swipe {
+    width: 100%;
+    height:50vw;
+    a,img {
+      display: block;
+      width: 100%;
+      height:100%;
+    }
+  }
 </style>

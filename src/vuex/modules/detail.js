@@ -17,7 +17,7 @@ const mutations={
    [types.SET_DATAS](state,res){
       state.BlogDatas=res;
    },
-   
+
 }
 
 const actions={

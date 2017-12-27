@@ -9,7 +9,7 @@ import 'mint-ui/lib/style.css'
 
 Vue.use(mint)
 Vue.config.productionTip = false
-Vue.prototype.$ajax=axios;
+Vue.prototype.$api=axios;
 
 
 /* eslint-disable no-new */
