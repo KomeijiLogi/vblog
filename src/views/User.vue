@@ -1,15 +1,15 @@
 <template>
-   <div>
+    <div>
       <v-footer></v-footer>
-   </div>
+    </div>
 </template>
 
 <script>
     import Footer from '@/common/footer.vue'
     export default {
-        name: "index",
+        name: "user",
         components:{
-          'v-footer':Footer
+           'v-footer':Footer
         }
     }
 </script>

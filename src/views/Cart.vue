@@ -7,9 +7,9 @@
 <script>
     import Footer from '@/common/footer.vue'
     export default {
-        name: "index",
+        name: "cart",
         components:{
-          'v-footer':Footer
+           'v-footer':Footer
         }
     }
 </script>

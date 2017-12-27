@@ -7,10 +7,10 @@
 <script>
     import Footer from '@/common/footer.vue'
     export default {
-        name: "index",
-        components:{
+        name: "category",
+       components:{
           'v-footer':Footer
-        }
+       }
     }
 </script>
 

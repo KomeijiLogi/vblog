@@ -3,8 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import mint from 'mint-ui'           //mint-ui
+import axios from 'axios'            //axios'
+import 'mint-ui/lib/style.css'
 
+Vue.use(mint)
 Vue.config.productionTip = false
+Vue.prototype.$ajax=axios;
+
 
 /* eslint-disable no-new */
 new Vue({
