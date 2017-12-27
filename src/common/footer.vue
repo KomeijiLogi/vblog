@@ -10,7 +10,7 @@
               分类页
           </mt-tab-item>
           <mt-tab-item id="编辑页">
-              <i slot="icon" class="iconfont icon-cart"></i>
+              <i slot="icon" class="iconfont icon-edit"></i>
             编辑页
           </mt-tab-item>
           <mt-tab-item id="用户页">

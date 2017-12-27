@@ -16,8 +16,11 @@ export const GET_USERINFO='GET_USERINFO';
 //记录用户信息
 export const RECORD_USERINFO='RECORD_USERINFO';
 
+//登录
+export const IN_LOG='IN_LOG';
+
 //退出登录
-export const OUT_LOGIN='OUT_LOGIN';
+export const OUT_LOG='OUT_LOG';
 
 //保存博客
 export const SAVE_BLOG='SAVE_BLOG';
@@ -27,7 +30,12 @@ export const SAVE_BLOG='SAVE_BLOG';
 export const DELETE_BLOG='DELETE_BLOG';
 
 
+//修改博客
+export const CHANGE_BLOG='CHANGE_BLOG';
 
+
+//分类页的aside index
+export const CHANGE_TABINDEX='CHANGE_TABINDEX';
 
 
 
