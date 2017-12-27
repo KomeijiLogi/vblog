@@ -31,7 +31,7 @@ export default new Router({
     },
     {
       path:'/cart',
-      name:'购物车',
+      name:'编辑页',
       component:Cart
     },
     {

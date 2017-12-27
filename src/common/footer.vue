@@ -9,9 +9,9 @@
               <i slot="icon" class="iconfont icon-category"></i>
               分类页
           </mt-tab-item>
-          <mt-tab-item id="购物车">
+          <mt-tab-item id="编辑页">
               <i slot="icon" class="iconfont icon-cart"></i>
-              购物车
+            编辑页
           </mt-tab-item>
           <mt-tab-item id="用户页">
               <i slot="icon" class="iconfont icon-set"></i>
@@ -46,8 +46,8 @@
              case '分类页':
                 this.selected='分类页';
                 break;
-             case '购物车':
-                this.selected='购物车';
+             case '编辑页':
+                this.selected='编辑页';
                 break;
              case '用户页':
                 this.selected='用户页';
