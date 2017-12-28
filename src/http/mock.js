@@ -5,7 +5,7 @@ var index=Mock.mock('http://api.com/index',{
    //length=4 name为swiper的数组,用于模拟存放播片的image
    'swiper|4':[
      {
-       'imgPath':Random.image('800x400', '#04a1f7', '#FFF', 'png', ''),
+       'imgPath':Random.image('800x400', '#57AEF1', '#FFF', 'png', ''),
        'id':'@id'
      }
    ],
@@ -43,7 +43,12 @@ var category=Mock.mock('http://api.com/category',{
 });
 
 var detail=Mock.mock('http://api.com/detail',{
-
+     'content|1':[{
+         'title':'@ctitle()',
+         'time':'@datetime()',
+         'para':'@cparagraph()',
+         'auth':'@cname'
+     }]
 });
 
 export   {

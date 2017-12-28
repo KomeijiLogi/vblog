@@ -26,6 +26,7 @@
       justify-content: space-around;
 
       li {
+        color: #CB1F26;
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
