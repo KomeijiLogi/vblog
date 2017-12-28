@@ -13,14 +13,9 @@
 
 <script>
     export default {
-        name: "footer",
+
         methods:{
-           delete(){
 
-           },
-           favorite(){
-
-           }
 
         }
     }

@@ -35,7 +35,7 @@
         },
         beforeCreate(){
             this.$api({
-               url:'http://api.com/index',
+               url:'/index',
                method:'post'
             }).then((response)=>{
                this.datas=response.data;

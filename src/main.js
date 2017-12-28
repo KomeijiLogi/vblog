@@ -7,11 +7,11 @@ import mint from 'mint-ui'           //mint-ui
 import axios from 'axios'            //axios'
 import 'mint-ui/lib/style.css'
 import store from '@/vuex/store.js'   //vuex
-
+import api from '@/http/api.js'
 
 Vue.use(mint)
 Vue.config.productionTip = false
-Vue.prototype.$api=axios;
+Vue.prototype.$api=api;
 
 
 /* eslint-disable no-new */
