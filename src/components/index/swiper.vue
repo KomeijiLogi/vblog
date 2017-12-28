@@ -1,17 +1,17 @@
 <template lang="html">
-   <mt-swipe :auto="4000">
+    <mt-swipe :auto="4000">
        <mt-swipe-item v-for="k in swiperData">
-           <router-link :to="{name:'详情页'}">
-              <img v-lazy="k.imgPath"  alt=""/>
-           </router-link>
-       </mt-swipe-item>
+      <router-link :to="{name:'详情页'}">
+        <img v-lazy="k.imgPath"  alt=""/>
+      </router-link>
+    </mt-swipe-item>
    </mt-swipe>
 </template>
 
 <script>
     export default {
         // name: "swiper"
-         props:['swiperData']
+      props:['swiperData']
     }
 </script>
 

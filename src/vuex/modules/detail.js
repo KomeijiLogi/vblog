@@ -19,9 +19,22 @@ const mutations={
    },
 
 }
+let vm=new Vue({});
 
 const actions={
-
+   //从父组件发送异步请求
+   setDatas({commit}){
+     vm.$api({
+       method:'post',
+       url:'/detail'
+     })
+       .then((response)=>{
+          commit('SET_DATAS',response.data);
+       })
+       .catch((error)=>{
+           console.log(error);
+       })
+   }
 }
 
 const getters={

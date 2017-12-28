@@ -6,6 +6,8 @@ import router from './router'
 import mint from 'mint-ui'           //mint-ui
 import axios from 'axios'            //axios'
 import 'mint-ui/lib/style.css'
+import store from '@/vuex/store.js'   //vuex
+
 
 Vue.use(mint)
 Vue.config.productionTip = false
@@ -16,6 +18,7 @@ Vue.prototype.$api=axios;
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
