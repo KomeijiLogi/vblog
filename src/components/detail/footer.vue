@@ -2,11 +2,11 @@
    <footer class="footer">
 
        <router-link :to="{name:'首页'}" class="footer-index">
-          <i class="iconfont icon-form"></i>
+          <i class="iconfont icon-information"></i>
        </router-link>
-        <i class="iconfont icon-favorite" @click="collect"></i>
+        <i class="iconfont icon-favorite" @click="collect" :class="{isCollect:isCflag}"></i>
         <router-link :to="{name:'评论页'}">
-           <i class="iconfont icon-comments"></i>
+            <i class="iconfont icon-comments"></i>
         </router-link>
         <i class="iconfont icon-email"></i>
    </footer>
@@ -15,11 +15,15 @@
 <script>
     import {Toast} from 'mint-ui'
     export default {
+        data:{
 
+
+        },
         methods:{
             collect(){
                 if(this.$store.state.detail.Collect_Flag){
                   this.$store.commit('COLLECT_BLOG',false);
+                  this.isCflag=false;
                   Toast({
                     message:'取消收藏',
                     position:'bottom',
@@ -27,6 +31,7 @@
                   });
                 }else {
                   this.$store.commit('COLLECT_BLOG',true);
+                  this.isCflag=true;
                   Toast({
                     message:'收藏成功',
                     position:'bottom',
@@ -36,7 +41,15 @@
 
             }
 
+        },
+      computed:{
+        isCflag(){
+           if(this.$store.state.detail.Collect_Flag){
+              return true;
+           }
+          return false;
         }
+      }
     }
 </script>
 
@@ -75,11 +88,11 @@
      text-align: center;
      vertical-align: center;
      .fz(font-size,50);
-     .is-selected{
-        color: @cl;
-        background-color: #ffffff;
-     }
-   }
 
+   }
+  .isCollect{
+    color: @cl;
+    background-color: #ffffff;
+  }
 }
 </style>

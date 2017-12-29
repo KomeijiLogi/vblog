@@ -1,18 +1,19 @@
 <template>
     <div class="content">
         <div v-for="k in content">
-           <h3 class="content-title">{{k.title}}</h3>
-          <p class="content-auth">{{k.auth}}</p>
-           <p class="content-time">{{k.time}}</p>
+           <div class="content-bt">
+             <h3 class="content-title">{{k.title}}</h3>
+             <p class="content-auth">{{k.auth}}</p>
+             <p class="content-time">{{k.time}}</p>
+
+           </div>
 
            <ul class="content-ul">
              <li v-for="l in k.para" class="content-para">
-                  <img :src="l.cimg" alt="" class="content-img"/>
+                  <!--<img :src="l.cimg" alt="" class="content-img"/>-->
                   <p>
                     {{l.ctext}}
                   </p>
-
-
              </li>
            </ul>
 
@@ -41,6 +42,7 @@
    -webkit-font-smoothing: subpixel-antialiased;
     height: 100%;
     padding: 2vw;
+    background: url("../../assets/title.jpg");
     .content-title{
         text-align: center;
         .fz(font-size,42);
@@ -63,7 +65,7 @@
         .content-img{
           width: 90%;
           height:100%;
-          border-radius: 5vw;
+          border-radius: .5vw;
         }
       }
     }
