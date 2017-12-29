@@ -11,18 +11,33 @@ const api=axios.create({
      'X-Requested-With':'XMLHttpRequest'
    }
 });
+
 api.interceptors.request.use(function (config) {
 
   return config;
 },function (error) {
+  //错误提示
+  alert(error);
 
   return Promise.reject(error);
 });
+
 
 api.interceptors.response.use(function (response) {
 
    return response;
 },function (error) {
+  //对响应错误所做操作
+  if(error.response){
+    //返回状态码是401 未授权
+    if(error.response.status==401){
+      //对其进行重定向
+       router.replace({
+         path:'/login',
+         query:{redirect:router.currentRoute.fullPath}
+       })
+    }
+  }
 
   return Promise.reject(error);
 });

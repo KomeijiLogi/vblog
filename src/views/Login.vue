@@ -1,13 +1,16 @@
 <template>
-
+    <v-login></v-login>
 </template>
 
 <script>
+    import Main from '@/components/login/main.vue'
     export default {
-        name: "login"
+        components:{
+           'v-login':Main
+        }
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 
 </style>
