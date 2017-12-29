@@ -11,6 +11,7 @@ const Cart=resolve=>require(['@/views/Cart.vue'],resolve)
 const User=resolve=>require(['@/views/User.vue'],resolve)
 const Login=resolve=>require(['@/views/Login.vue'],resolve)
 const Detail=resolve=>require(['@/views/Detail.vue'],resolve)
+const Comment=resolve=>require(['@/views/Comment.vue'],resolve)
 
 export default new Router({
   routes: [
@@ -46,6 +47,11 @@ export default new Router({
       meta:{
         requireAuth:true
       }
+    },
+    {
+       path:'/comment',
+       name:'评论页',
+       component:Comment
     }
   ]
 })

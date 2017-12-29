@@ -46,8 +46,15 @@ var detail=Mock.mock('http://api.com/detail',{
      'content|1':[{
          'title':'@ctitle()',
          'time':'@datetime()',
-         'para':'@cparagraph()',
+         'para|6':[
+           {
+             'cimg': Random.image('800x200', '#3F9EC8', '#FFF', 'png', ''),
+             'ctext':'@cparagraph()'
+           }
+         ],
          'auth':'@cname'
+
+
      }]
 });
 

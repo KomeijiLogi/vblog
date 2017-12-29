@@ -9,7 +9,7 @@ const state={
    Card_List:'',           //总清单
    Save_Content:'',        //保存内容
    BlogDatas:'',            //从父组件传过来的博客数据
-
+   Collect_Flag:false,     //定义收藏flag，如果为false显示未收藏
 }
 
 const mutations={
@@ -17,7 +17,9 @@ const mutations={
    [types.SET_DATAS](state,res){
       state.BlogDatas=res;
    },
-
+   [types.COLLECT_BLOG](state,res){
+      state.Collect_Flag=res;
+   }
 }
 let vm=new Vue({});
 

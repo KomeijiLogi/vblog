@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: "header"
+       //name: "header"
     }
 </script>
 
@@ -21,7 +21,7 @@
     @import "../assets/fz.less";
 
     header{
-       background-color: azure;
+       background-color: #00a0ea;
        text-align: center;
        position: relative;
        height: 12vw;
@@ -29,18 +29,21 @@
        align-items: center;
        justify-content:space-between;
        padding: 0.4vw;
-       h1{
+       h2{
           .fz(font-size,34);
           letter-spacing: .2vw;
-          font-weight: 600;
-          margin-right: 36vw;
+          font-weight: 500;
+          margin-right: 44vw;
+          color: #ffffff;
        }
        span,a{
          display: inline-block;
-         .fz(font-size,46);
-         transform: rotate(180deg);
+
+         padding: 6vw;
+         transform: rotate(0deg);
          &::before{
-           color: #333333;
+           color: #ffffff;
+           .fz(font-size,46);
          }
        }
     }

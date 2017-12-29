@@ -2,9 +2,20 @@
     <div class="content">
         <div v-for="k in content">
            <h3 class="content-title">{{k.title}}</h3>
+          <p class="content-auth">{{k.auth}}</p>
            <p class="content-time">{{k.time}}</p>
-           <p class="content-para">{{k.para}}</p>
-           <p class="content-auth">{{k.auth}}</p>
+
+           <ul class="content-ul">
+             <li v-for="l in k.para" class="content-para">
+                  <img :src="l.cimg" alt="" class="content-img"/>
+                  <p>
+                    {{l.ctext}}
+                  </p>
+
+
+             </li>
+           </ul>
+
         </div>
 
     </div>
@@ -26,25 +37,40 @@
  @import "../../assets/fz";
  .content{
     background-color: azure;
-    color: gray;
+   color: #000000;
+   -webkit-font-smoothing: subpixel-antialiased;
     height: 100%;
-   padding: 1vw;
+    padding: 2vw;
     .content-title{
         text-align: center;
-        .fz(font-size,40);
-
+        .fz(font-size,42);
+        padding: 2vw;
+        font-weight: 500;
     }
     .content-time{
        text-align: right;
+       padding: 2vw;
+    }
+    .content-ul{
+      margin-bottom: 8vw;
+      padding-bottom: 6vw;
+      .content-para{
+        .fz(text-indent,40);
+        .fz(font-size,30);
+        padding: 2vw;
+        letter-spacing: .8vw;
+        background-color: azure;
+        .content-img{
+          width: 90%;
+          height:100%;
+          border-radius: 5vw;
+        }
+      }
+    }
 
-    }
-    .content-para{
-       .fz(text-indent,40);
-       .fz(font-size,30);
-       padding: 1vw;
-    }
     .content-auth{
-       text-align: right;
+       text-align: center;
+
     }
  }
 </style>

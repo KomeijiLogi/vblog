@@ -1,21 +1,40 @@
 <template>
    <footer class="footer">
+
        <router-link :to="{name:'首页'}" class="footer-index">
-          <i class="iconfont icon-back"></i>
+          <i class="iconfont icon-form"></i>
        </router-link>
-        <i class="iconfont icon-favorite"></i>
-        <router-link :to="{name:''}">
+        <i class="iconfont icon-favorite" @click="collect"></i>
+        <router-link :to="{name:'评论页'}">
            <i class="iconfont icon-comments"></i>
         </router-link>
-        <i class="iconfont icon-delete"></i>
+        <i class="iconfont icon-email"></i>
    </footer>
 </template>
 
 <script>
+    import {Toast} from 'mint-ui'
     export default {
 
         methods:{
+            collect(){
+                if(this.$store.state.detail.Collect_Flag){
+                  this.$store.commit('COLLECT_BLOG',false);
+                  Toast({
+                    message:'取消收藏',
+                    position:'bottom',
+                    duration:2000
+                  });
+                }else {
+                  this.$store.commit('COLLECT_BLOG',true);
+                  Toast({
+                    message:'收藏成功',
+                    position:'bottom',
+                    duration:2000
+                  });
+                }
 
+            }
 
         }
     }
@@ -39,12 +58,13 @@
    -webkit-user-select: none;
    .pt();
    .bt();
+
    a{
       width: 25vw;
       height: 25vw;
      text-align: center;
 
-      i{
+     i{
         .fz(font-size,50);
          vertical-align: center;
       }
@@ -55,6 +75,10 @@
      text-align: center;
      vertical-align: center;
      .fz(font-size,50);
+     .is-selected{
+        color: @cl;
+        background-color: #ffffff;
+     }
    }
 
 }

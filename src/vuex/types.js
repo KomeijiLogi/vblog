@@ -25,6 +25,8 @@ export const OUT_LOG='OUT_LOG';
 //保存博客
 export const SAVE_BLOG='SAVE_BLOG';
 
+//收藏博客
+export const COLLECT_BLOG='COLLECT_BLOG';
 
 //删除博客
 export const DELETE_BLOG='DELETE_BLOG';
