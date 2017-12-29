@@ -35,14 +35,15 @@
        methods:{
           login(){
               if(this.username!=='' && this.password !==''){
+
+                this.$store.commit('LOGIN_TOKEN',1);
+                this.$store.commit('IN_LOG',{username:this.username,password:this.password});
                 Toast({
-                   message:'登录成功',
-                   duration:2000,
-                   position:'bottom'
+                  message:'登录成功',
+                  duration:2000,
+                  position:'bottom'
 
                 });
-                this.commit('LOGIN_TOKEN',1);
-                this.commit('IN_LOG',{username:this.username,password:this.password});
                 setTimeout(()=>{
                      this.$router.replace({
                         path:'user'
