@@ -15,10 +15,7 @@
 <script>
     import {Toast} from 'mint-ui'
     export default {
-        data:{
 
-
-        },
         methods:{
             collect(){
                 if(this.$store.state.detail.Collect_Flag){
@@ -43,11 +40,15 @@
 
         },
       computed:{
-        isCflag(){
-           if(this.$store.state.detail.Collect_Flag){
-              return true;
-           }
-          return false;
+        isCflag:{
+          get(){
+            return this.$store.state.detail.Collect_Flag;
+          },
+          set(value){
+
+          }
+
+
         }
       }
     }
