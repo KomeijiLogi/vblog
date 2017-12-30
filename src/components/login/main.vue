@@ -11,8 +11,8 @@
         <mt-button type="primary"  @click="login" size="normal">
           登录
         </mt-button>
-        <mt-button type="danger" size="normal">
-          取消
+        <mt-button type="danger" size="normal" @click="logout">
+          重置
         </mt-button>
       </div>
 
@@ -54,6 +54,10 @@
                  Toast(`账号密码不能为空`)
               }
 
+          },
+          logout(){
+             this.username='';
+             this.password='';
           }
        }
     }
