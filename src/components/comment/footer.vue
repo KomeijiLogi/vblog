@@ -6,7 +6,7 @@
         <i class="iconfont icon-back"></i>
       </router-link>
 
-      <i class="iconfont icon-electronics" @click="publish"></i>
+      <i class="iconfont icon-email" @click="repeat"></i>
   </footer>
 </template>
 
@@ -19,7 +19,8 @@
            }
         },
         methods:{
-           publish(){
+           //转发
+           repeat(){
 
            }
         }
