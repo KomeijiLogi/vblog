@@ -16,14 +16,60 @@
            </router-link>
            <section class="my-pay">
                <router-link :to="{name:''}">
-                 <span class="iconfont icon-"></span>
+                 <div>
+                   <span class="iconfont icon-process"></span>
+                 </div>
+                 <p>
+                   <span>进程</span><i class="iconfont icon-more"></i>
+                 </p>
+
                </router-link>
+
            </section>
            <section class="my-vip">
+             <router-link :to="{name:''}">
+               <div>
+                 <span class="iconfont icon-email"></span>
+               </div>
+               <p>
+                 <span>信息</span><i class="iconfont icon-more"></i>
+               </p>
 
+             </router-link>
+             <router-link :to="{name:''}">
+                <div>
+                   <span class="iconfont icon-form"></span>
+                </div>
+                <p>
+                  <span>表单</span><i class="iconfont icon-more"></i>
+                </p>
+             </router-link>
+             <router-link :to="{name:''}">
+                 <div>
+                   <span class="iconfont icon-electronics"></span>
+                 </div>
+                <p>
+                  <span>发布</span><i class="iconfont icon-more"></i>
+                </p>
+             </router-link>
            </section>
            <section class="my-service">
-
+               <router-link :to="{name:''}">
+                   <div>
+                     <span class="iconfont icon-help"></span>
+                   </div>
+                   <p>
+                     <span>帮助</span><i class="iconfont icon-more"></i>
+                   </p>
+               </router-link>
+               <router-link :to="{name:''}">
+                   <div>
+                      <span class="iconfont icon-information"></span>
+                   </div>
+                   <p>
+                     <span>版本信息</span><i class="iconfont icon-more"></i>
+                   </p>
+               </router-link>
            </section>
        </div>
 
@@ -191,8 +237,18 @@
     }
 
   }
+
+  .mint-button{
+     margin-top: 5vw;
+  }
 }
 .icon-more{
-
+  .fz(font-size, 36);
+  &::before {
+    color: #aba8a8;
+  }
+}
+.iconfont{
+  .fz(font-size,50);
 }
 </style>
