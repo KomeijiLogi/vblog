@@ -1,8 +1,9 @@
 <template>
    <div class="comment">
        <ul class="comment-list">
-         <li v-for="k in commentList">
-
+         <li v-for="k in commentList" class="comment-part">
+            <span>用户-</span><p>{{k.name}}</p>
+            <p>{{k.comment}}</p>
          </li>
        </ul>
    </div>
@@ -24,5 +25,11 @@
   .comment{
      width: 100%;
      .fz(font-size,30);
+     .comment-list{
+        padding: 1vw;
+        .comment-part{
+
+        }
+     }
   }
 </style>
