@@ -43,6 +43,8 @@ export const CHANGE_TABINDEX='CHANGE_TABINDEX';
 //获取评论信息
 export const GET_COMMENTS='GET_COMMENTS';
 
+//发起评论
+export const SET_COMMENTS='SET_COMMENTS';
 
 
 
