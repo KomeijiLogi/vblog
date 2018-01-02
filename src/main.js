@@ -9,6 +9,7 @@ import 'mint-ui/lib/style.css'
 import store from '@/vuex/store.js'   //vuex
 import api from '@/http/api.js'
 
+
 Vue.use(mint)
 Vue.config.productionTip = false
 Vue.prototype.$api=api;
