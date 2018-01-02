@@ -10,6 +10,7 @@ const state={
    Save_Content:'',        //保存内容
    BlogDatas:'',            //从父组件传过来的博客数据
    Collect_Flag:false,     //定义收藏flag，如果为false显示未收藏
+   Comment:''               //定义接受评论信息变量
 }
 
 const mutations={
@@ -19,6 +20,9 @@ const mutations={
    },
    [types.COLLECT_BLOG](state,res){
       state.Collect_Flag=res;
+   },
+   [types.GET_COMMENTS](state,res){
+      state.Comment=res;
    }
 }
 let vm=new Vue({});
@@ -36,6 +40,18 @@ const actions={
        .catch((error)=>{
            console.log(error);
        })
+   },
+   getComment({commit}){
+      vm.$api({
+         method:'post',
+         url:'/comment'
+      })
+        .then((response)=>{
+          commit('GET_COMMENTS',response.data);
+        })
+        .catch((error)=>{
+          console.log(error);
+        })
    }
 }
 

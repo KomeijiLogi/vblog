@@ -24,7 +24,14 @@
                  </p>
 
                </router-link>
-
+               <router-link :to="{name:''}">
+                  <div>
+                     <span class="iconfont icon-favorite"></span>
+                  </div>
+                  <p>
+                    <span>收藏</span><i class="iconfont icon-more"></i>
+                  </p>
+               </router-link>
            </section>
            <section class="my-vip">
              <router-link :to="{name:''}">
@@ -251,4 +258,5 @@
 .iconfont{
   .fz(font-size,50);
 }
+
 </style>

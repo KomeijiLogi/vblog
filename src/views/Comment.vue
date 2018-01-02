@@ -1,10 +1,16 @@
 <template>
+    <div class="comment">
 
+    </div>
 </template>
 
 <script>
+    import Header from '@/common/header.vue'
     export default {
-        name: "comment"
+
+        beforeCreate(){
+           this.$store.dispatch('getComment');
+        }
     }
 </script>
 

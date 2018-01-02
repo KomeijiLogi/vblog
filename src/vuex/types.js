@@ -40,5 +40,9 @@ export const CHANGE_BLOG='CHANGE_BLOG';
 export const CHANGE_TABINDEX='CHANGE_TABINDEX';
 
 
+//获取评论信息
+export const GET_COMMENTS='GET_COMMENTS';
+
+
 
 

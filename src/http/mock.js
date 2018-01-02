@@ -58,6 +58,18 @@ var detail=Mock.mock('http://api.com/detail',{
      }]
 });
 
+var comment=Mock.mock('http://api.com/comment',{
+    'list|10':[
+      {
+        'name':'@name()',
+        'comment':'@word()',
+        'ip':'@ip()',
+        'time':'@datetime()',
+        'account':'@integer(10000,99999)'
+      }
+    ]
+});
+
 export   {
    index,
    category,

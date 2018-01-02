@@ -2,7 +2,7 @@
    <footer class="footer">
 
        <router-link :to="{name:'首页'}" class="footer-index">
-          <i class="iconfont icon-information"></i>
+          <i class="iconfont icon-all"></i>
        </router-link>
         <i class="iconfont icon-favorite" @click="collect" :class="{isCollect:isCflag}"></i>
         <router-link :to="{name:'评论页'}">
