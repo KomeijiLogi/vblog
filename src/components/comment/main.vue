@@ -23,7 +23,7 @@
   @import "../../assets/fz";
   @import "../../assets/icons/iconfont";
   .comment{
-     width: 100%;
+    
      .fz(font-size,30);
      .comment-list{
         padding: 1vw;
