@@ -10,7 +10,7 @@
            <router-link class="my-content" :to="{name:''}">
                <span class="my-content-left">我的博客</span>
                <div class="my-content-right">
-                   <span>全部博客</span>
+                   <span>查看更多</span>
                    <i class="iconfont icon-more"></i>
                </div>
            </router-link>
