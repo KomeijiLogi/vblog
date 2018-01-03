@@ -35,6 +35,7 @@
   .comment{
 
      .fz(font-size,30);
+     margin-bottom: 10vw;
      .comment-list{
         padding: 1vw;
         .comment-part{

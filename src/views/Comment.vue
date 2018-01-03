@@ -30,7 +30,7 @@
 
    }
    .comment-footer{
-
+     background-color: white !important;
 
    }
 }

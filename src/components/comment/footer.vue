@@ -37,7 +37,9 @@
      .bd();
      box-sizing: border-box;
      display: flex;
-
+     position: fixed;
+     bottom: 0;
+     background-color: #fff;
     .comment-input{
         border: 1vw antiquewhite solid ;
         border-radius: 25vw;
