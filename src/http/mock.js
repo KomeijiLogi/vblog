@@ -13,6 +13,8 @@ var index=Mock.mock('http://api.com/index',{
    'section1':{
        'list|10':[
          {
+           'id':'@id',
+           'itmid':'@integer(0,99)',
            'title':'@ctitle()',
             'content':'@csentence()',
             'imgPath':Random.image('100x100','#894FC4','#FFF','png','')

@@ -26,7 +26,7 @@ export default new Router({
       component:Category
     },
     {
-      path:'/detail',
+      path:'/detail/:itmid',
       name:'详情页',
       component:Detail
     },
