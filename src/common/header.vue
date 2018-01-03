@@ -24,7 +24,7 @@
        background-color: #00a0ea;
        text-align: center;
        position: relative;
-       height: 12vw;
+       height: 11vw;
        display: flex;
        align-items: center;
        justify-content:space-between;
