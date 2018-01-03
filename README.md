@@ -2,25 +2,31 @@
 
 >  使用 vue2.x 全家桶实现的博客项目
 
->技术栈
+>技术栈:
  
-##### 使用vue2.x+vuex+vue-router+axios+less+mockjs实现的一个博客
-
-####  已实现：
-
-###### +首页展示
-###### +详情查看
+##### vue2.x+vuex+vue-router+axios+less+mockjs
 
 
+>说明:
+##### 一直想尝试使用vue全家桶来实现移动web的开发，所以刚开始选择了交互逻辑比较少的博客来作为目标，
+##### 前期使用mockjs模拟数据来提供数据支持，后期会根据nodejs，express和MongoDB的学习情况来做简单的后台
+##### 以及搭建服务器
+
+#### 现阶段实现了首页数据的展示，详情页数据展示，以及登录用户页和评论页的展示
 #### 待实现:
+##### 筛选分类页
+##### 编辑页
+##### 页面的细节调整
+##### 路由的调整逻辑
+##### 后台支持
 
 
-###### -编辑功能
-###### -分类功能
-###### -用户信息展示功能
-###### -登录功能
-###### -评论功能
+>效果图演示:
+![](https://github.com/KomeijiLogi/vblog/blob/master/gif/blog1.gif)
+![](https://github.com/KomeijiLogi/vblog/blob/master/gif/blog2.gif)
      
+	 
+	 
 
 ## Build Setup
 
