@@ -39,6 +39,7 @@
         },
         mounted(){
            let Rname=this.$route.name;
+           //console.log(this.$route);
            switch (Rname){
              case '首页':
                 this.selected='首页';
