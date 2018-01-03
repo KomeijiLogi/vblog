@@ -61,8 +61,8 @@ var detail=Mock.mock('http://api.com/detail',{
 var comment=Mock.mock('http://api.com/comment',{
     'list|10':[
       {
-        'name':'@name()',
-        'comment':'@word()',
+        'name':'@cname()',
+        'comment':'@cparagraph(1, 3)',
         'ip':'@ip()',
         'time':'@datetime()',
         'account':'@integer(10000,99999)'

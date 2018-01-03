@@ -21,12 +21,16 @@
 </script>
 
 <style lang="less" scoped>
+  @import "../assets/fz";
+  @import "../assets/icons/iconfont";
 .comment{
 
    .comment-list{
 
+
    }
    .comment-footer{
+
 
    }
 }

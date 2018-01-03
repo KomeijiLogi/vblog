@@ -6,7 +6,7 @@
         <i class="iconfont icon-back"></i>
       </router-link>
 
-      <i class="iconfont icon-email" @click="repeat"></i>
+      <i class="iconfont icon-email" @click="publish"></i>
   </footer>
 </template>
 
@@ -19,8 +19,8 @@
            }
         },
         methods:{
-           //转发
-           repeat(){
+           //发送消息
+          publish(){
 
            }
         }
@@ -31,6 +31,7 @@
   @import "../../assets/fz";
   @import "../../assets/icons/iconfont";
  .footer{
+
     width: 100%;
      .bt();
      .bd();
