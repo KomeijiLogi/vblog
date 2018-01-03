@@ -2,7 +2,7 @@
   <footer class="footer">
       <input type="text" class="comment-input" placeholder="评论..." v-model="comment" />
 
-      <router-link :to="{name:'详情页'}">
+      <router-link :to="{name:'详情页',query:{'pageId':1}}">
         <i class="iconfont icon-back"></i>
       </router-link>
 

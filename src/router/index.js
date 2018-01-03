@@ -28,7 +28,8 @@ export default new Router({
     {
       path:'/detail',
       name:'详情页',
-      component:Detail
+      component:Detail,
+
     },
     {
       path:'/cart',

@@ -43,7 +43,11 @@ var index=Mock.mock('http://api.com/index',{
 });
 
 var category=Mock.mock('http://api.com/category',{
-
+    'aside|4':[
+      {
+        'title':['','','']
+      }
+    ]
 });
 
 var detail=Mock.mock('http://api.com/detail',{

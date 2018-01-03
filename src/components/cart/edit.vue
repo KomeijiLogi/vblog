@@ -2,13 +2,18 @@
   <div class="edit">
 
 
+
   </div>
 </template>
 
 <script>
-    import { PaletteButton } from 'mint-ui'
-    export default {
 
+    export default {
+       data(){
+         return{
+            title:''
+         }
+       }
     }
 </script>
 
@@ -16,8 +21,17 @@
   @import "../../assets/fz";
   @import "../../assets/icons/iconfont";
   .edit{
+     display: flex;
+     flex-direction: column;
+     padding: 1vw;
+     .edit-title{
+        .fz(font-size,34);
+        padding: 1vw;
+        border: #FFAA00 1px solid;
+        border-radius: 2vw;
+        margin-top: 2vw;
 
-
+     }
 
 
 
