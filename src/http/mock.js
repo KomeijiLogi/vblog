@@ -6,7 +6,8 @@ var index=Mock.mock('http://api.com/index',{
    'swiper|4':[
      {
        'imgPath':Random.image('800x400', '#57AEF1', '#FFF', 'png', ''),
-       'id':'@id'
+       'id':'@id',
+       'pageId':'@integer(0,99)'
      }
    ],
    //模拟主体第一部分,存放包括标题和主体，以及1张图 主要的三部分
@@ -14,7 +15,7 @@ var index=Mock.mock('http://api.com/index',{
        'list|10':[
          {
            'id':'@id',
-           'itmid':'@integer(0,99)',
+           'pageId':'@integer(0,99)',
            'title':'@ctitle()',
             'content':'@csentence()',
             'imgPath':Random.image('100x100','#894FC4','#FFF','png','')
@@ -28,6 +29,7 @@ var index=Mock.mock('http://api.com/index',{
         'list|10':[
           {
              'id':'@id()',
+            'pageId':'@integer(0,99)',
              'title':'@ctitle()',
              'content':'@csentence()',
              'imgPath1':Random.image('200x100','#E85A90','#FFF','png',''),

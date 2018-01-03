@@ -3,7 +3,7 @@
       <div class="section2-list" >
          <ul>
             <li v-for="k in section2.list" :key="k.id">
-               <router-link :to="{name:'详情页'}">
+               <router-link :to="{name:'详情页',query:{pageId:k.pageId}}">
                    <h4 class="section2-title">
                      {{k.title}}
                    </h4>
@@ -15,7 +15,7 @@
                </router-link>
             </li>
          </ul>
-         <router-link :to="{name:'详情页'}" class="section2-banner">
+         <router-link :to="{name:'详情页',query:{pageId:2}}" class="section2-banner">
              <img v-lazy="section2.banner" v-if="section2" class="section2-banner" alt=""/>
          </router-link>
       </div>
