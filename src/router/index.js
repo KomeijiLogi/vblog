@@ -6,7 +6,8 @@ import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 const Index=resolve=>require(['@/views/Index.vue'],resolve)
-const Category=resolve=>require(['@/views/Category'],resolve)
+const Category=resolve=>require(['@/views/Category.vue'],resolve)
+const CategoryMain=resolve=>require(['@/components/category/main.vue'],resolve)
 const Cart=resolve=>require(['@/views/Cart.vue'],resolve)
 const User=resolve=>require(['@/views/User.vue'],resolve)
 const Login=resolve=>require(['@/views/Login.vue'],resolve)
@@ -23,7 +24,15 @@ export default new Router({
     {
       path:'/category',
       name:'分类页',
-      component:Category
+      component:Category,
+      redirect:'/category/all',
+      children:[
+        {
+          path:'/category/:tab',
+          component:CategoryMain
+        }
+      ]
+
     },
     {
       path:'/detail',

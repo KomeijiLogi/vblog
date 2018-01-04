@@ -43,9 +43,14 @@ var index=Mock.mock('http://api.com/index',{
 });
 
 var category=Mock.mock('http://api.com/category',{
-    'aside|4':[
+    'aside|10':[
       {
-        'title':['','','']
+        'title|+1':['推荐','热点','图片','科技','国际','动漫','游戏','科学','自然','美食'],
+        'list|60':[{
+           'title':'@ctitle(3,5)',
+           'imgPath':Random.image('2000x2000','#F76300','#FFF','png',''),
+          'pageId':'@integer(0,99)'
+        }]
       }
     ]
 });
@@ -81,7 +86,8 @@ var comment=Mock.mock('http://api.com/comment',{
 export   {
    index,
    category,
-   detail
+   detail,
+   comment
 }
 
 

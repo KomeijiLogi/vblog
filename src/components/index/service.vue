@@ -1,16 +1,21 @@
 <template>
     <div class="service">
        <ul>
-         <li><i class="iconfont icon-information"></i><span>高效</span></li>
-         <li><i class="iconfont icon-information"></i><span>实时</span></li>
-         <li><i class="iconfont icon-information"></i><span>优质</span></li>
+         <li><i class="iconfont icon-information"></i><span @click="toggleRedirect">GitHub</span></li>
+         <li><i class="iconfont icon-information"></i><span @click="toggleRedirect">GitHub</span></li>
+         <li><i class="iconfont icon-information"></i><span @click="toggleRedirect">GitHub</span></li>
        </ul>
     </div>
 </template>
 
 <script>
     export default {
-        name: "service"
+        methods:{
+           toggleRedirect(){
+              const url='https://github.com/KomeijiLogi';
+              window.location.replace(url);
+           }
+        }
     }
 </script>
 
@@ -26,7 +31,7 @@
       justify-content: space-around;
 
       li {
-        color: #CB1F26;
+        color: #80ff67;
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
