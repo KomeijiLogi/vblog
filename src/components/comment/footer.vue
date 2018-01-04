@@ -2,7 +2,7 @@
   <footer class="footer">
       <input type="text" class="comment-input" placeholder="评论..." v-model="comment" />
 
-      <router-link :to="{name:'详情页',query:{'pageId':1}}">
+      <router-link :to="{name:'详情页',query:{'pageId':pageId}}">
         <i class="iconfont icon-back"></i>
       </router-link>
 
@@ -15,7 +15,8 @@
     export default {
         data(){
            return{
-              comment:''
+              comment:'',
+              pageId:1
            }
         },
         methods:{
