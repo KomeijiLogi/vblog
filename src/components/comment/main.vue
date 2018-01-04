@@ -1,7 +1,7 @@
 <template>
    <div class="comment">
        <ul class="comment-list">
-         <li v-for="k in commentList" class="comment-part">
+         <li v-for="k in commentList" class="comment-part" @click="toggleInput">
             <label class="comment-line comment-user">
               <span>用户-</span><p>{{k.name}}</p>|账号-<p>{{k.account}}</p>
             </label>
@@ -24,6 +24,11 @@
        computed:{
          commentList(){
              return this.$store.state.detail.CommentList.list;
+          }
+       },
+       methods:{
+          toggleInput(){
+
           }
        }
     }

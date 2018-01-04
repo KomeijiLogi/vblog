@@ -1,6 +1,6 @@
 <template lang="html">
     <mt-swipe :auto="4000">
-       <mt-swipe-item v-for="k in swiperData">
+       <mt-swipe-item v-for="k in swiperData" :key="k.id">
       <router-link :to="{name:'详情页',query:{pageId:k.pageId}}">
         <img v-lazy="k.imgPath"  alt=""/>
       </router-link>
