@@ -13,6 +13,7 @@ const User=resolve=>require(['@/views/User.vue'],resolve)
 const Login=resolve=>require(['@/views/Login.vue'],resolve)
 const Detail=resolve=>require(['@/views/Detail.vue'],resolve)
 const Comment=resolve=>require(['@/views/Comment.vue'],resolve)
+const Search=resolve=>require(['@/views/Search'],resolve)
 
 export default new Router({
   routes: [
@@ -62,6 +63,11 @@ export default new Router({
        path:'/comment',
        name:'评论页',
        component:Comment
+    },
+    {
+      path:'/search',
+      name:'搜索页',
+      component:Search
     }
   ]
 })

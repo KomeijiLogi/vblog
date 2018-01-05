@@ -3,7 +3,7 @@
        <!--<router-link to="/" slot="left">-->
            <!--<mt-button icon="back"></mt-button>-->
        <!--</router-link>-->
-       <router-link to="/" slot="right">
+       <router-link to="/search" slot="right">
           <mt-button icon="search" ></mt-button>
        </router-link>
 

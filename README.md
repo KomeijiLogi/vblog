@@ -25,48 +25,50 @@
 >效果图演示:<br/>
 ![](https://github.com/KomeijiLogi/vblog/blob/master/gif/blog1.gif)  <br/>
 ![](https://github.com/KomeijiLogi/vblog/blob/master/gif/blog2.gif)  <br/>
+![](https://github.com/KomeijiLogi/vblog/blob/master/gif/blog3.gif)  <br/>
 
 >文件结构:
-##### |-src
-##### &nbsp; &nbsp;&nbsp;   |-assets     
-#####     &nbsp;&nbsp;&nbsp;&nbsp;    |-icons     //字体文件夹
-#####        &nbsp;&nbsp;&nbsp;&nbsp; |-carbg.png  //图片资源
-#####         &nbsp;&nbsp;&nbsp;&nbsp;|-fz.less     //定义部分可复用less函数   
-#####    &nbsp;&nbsp;&nbsp;&nbsp;     |-title.jpg    //详情页背景图
-##### |-common         //公用vue组件
-##### |-components     //各页面子组件
-#####    &nbsp;&nbsp;&nbsp;  |-cart       //编辑页  
-#####   &nbsp;&nbsp;&nbsp;   |-category   //分类页
-#####  &nbsp;&nbsp;&nbsp;    |-comment     //评论页
-#####     &nbsp;&nbsp;&nbsp; |-detail      //详情页                   
-#####  &nbsp;&nbsp;&nbsp;    |-index       //首页
-#####   &nbsp;&nbsp;&nbsp;   |-login       //登录页
-#####  &nbsp;&nbsp;&nbsp;    |-user         //用户页
-##### |-http
-#####   &nbsp;&nbsp;   |-api.js       //封装axios
-#####     &nbsp;&nbsp; |-mock.js       //模拟数据
-##### |-router
-#####      &nbsp;&nbsp;|-index.js     //vue 路由
-##### |-util
-#####     &nbsp;&nbsp; |-common.js    //工具js
-##### |-views       //各页面父组件
-#####      &nbsp;&nbsp;|-cart.vue
-#####      &nbsp;&nbsp;|-category.vue
-#####     &nbsp;&nbsp; |-comment.vue 
-#####    &nbsp;&nbsp;  |-detail.vue 
-#####    &nbsp;&nbsp;  |-index.vue 
-#####    &nbsp;&nbsp;  |-login.vue 
-#####     &nbsp;&nbsp; |-user.vue 
-##### |-vuex        //vuex
-#####   &nbsp;&nbsp;   |-modules   //封装modules
-#####         &nbsp;&nbsp;&nbsp;&nbsp;  |-category.js 	 
-#####           &nbsp;&nbsp;&nbsp;&nbsp;|-detail.js 	
-#####           &nbsp;&nbsp;&nbsp;&nbsp;|-login.js 	
-#####         &nbsp;&nbsp;&nbsp;|-store.js   //将vuex暴露出来
-#####       &nbsp;&nbsp;&nbsp;  |-types.js   //定义types类型
-##### |-App.vue
-##### |-main.js            	
-	 
+<pre><code>
+ |-src
+     |-assets     
+         |-icons     //字体文件夹
+        |-carbg.png  //图片资源
+         |-fz.less     //定义部分可复用less函数   
+         |-title.jpg    //详情页背景图
+ |-common         //公用vue组件
+ |-components     //各页面子组件
+      |-cart       //编辑页  
+      |-category   //分类页
+      |-comment     //评论页
+      |-detail      //详情页                   
+      |-index       //首页
+      |-login       //登录页
+      |-user         //用户页
+ |-http
+      |-api.js       //封装axios
+      |-mock.js       //模拟数据
+ |-router
+      |-index.js     //vue 路由
+ |-util
+      |-common.js    //工具js
+ |-views       //各页面父组件
+      |-cart.vue
+      |-category.vue
+      |-comment.vue 
+      |-detail.vue 
+      |-index.vue 
+      |-login.vue 
+      |-user.vue 
+ |-vuex        //vuex
+      |-modules   //封装modules
+           |-category.js 	 
+           |-detail.js 	
+           |-login.js 	
+         |-store.js   //将vuex暴露出来
+         |-types.js   //定义types类型
+ |-App.vue
+ |-main.js            	
+</code></pre>	 
 
 ## Build Setup
 

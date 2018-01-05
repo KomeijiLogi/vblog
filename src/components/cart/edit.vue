@@ -30,7 +30,6 @@
         border: #FFAA00 1px solid;
         border-radius: 2vw;
         margin-top: 2vw;
-
      }
 
 
